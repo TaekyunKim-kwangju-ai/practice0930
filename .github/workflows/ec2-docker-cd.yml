@@ -29,7 +29,7 @@ jobs:
       # 도커 이미지 태그 및 Docker Hub에 푸시
       - name: Push Docker image to Docker Hub
         run: |
-          docker tag myapp:latest ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
+          docker tag iris-inference:latest ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/myapp:latest
 
       # SSH를 이용해 EC2 서버로 배포
