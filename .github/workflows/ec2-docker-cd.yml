@@ -31,7 +31,7 @@ jobs:
         with:
             push: true
             tags: taekkim/iris-inference:latest
-            cache-from: type=registry,ref=taekkim/inference:latest
+            cache-from: type=registry,ref=taekkim/iris-inference:latest
             cache-to: type=inline
 
       # SSH를 이용해 EC2 서버로 배포
