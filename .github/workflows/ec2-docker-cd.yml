@@ -64,5 +64,5 @@ jobs:
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/iris-inference:latest
 
             # 새 이미지를 기반으로 컨테이너 실행
-            docker run -d --name iris-inference -p 80:80 ${{ secrets.DOCKER_HUB_USERNAME }}/iris-inference:latest
+            docker run -d --name iris-inference -p 8000:8000 ${{ secrets.DOCKER_HUB_USERNAME }}/iris-inference:latest
           EOF
